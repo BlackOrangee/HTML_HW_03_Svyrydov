@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sometype+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <img src="assets/logo.png" alt="logo" />
+      <h1>Громадська організація ІТ - місто</h1>
+    </a>
+    <nav class="header__nav">
+      <ul>
+        <li>
+          <a href="#">Новини</a>
+        </li>
+        <li>
+          <a href="#">Проекти</a>
+        </li>
+        <li>
+          <a href="#">Команда</a>
+        </li>
+        <li>
+          <a href="#">Про нас</a>
+        </li>
+        <li>
+          <div>
+            <a class="header__nav_button" href="#">Контакти</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__text">
+        <h3>Громадська організація</h3>
+        <h1>ІТ - місто</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis, nulla et dapibus elementum, diam
+          purus pulvinar risus, at consectetur neque eros in dolor. Sed faucibus sed diam et gravida. Vivamus elementum
+          arcu at odio consequat placerat. Morbi id rutrum justo.
+        </p>
+        <a href="#">Дізнатись більше</a>
+      </div>
+      <div class="carousel-wrapper">
+        <!-- abstract radio buttons for slides -->
+        <input id="slide1" type="radio" name="controls" checked="checked" />
+        <input id="slide2" type="radio" name="controls" />
+        <input id="slide3" type="radio" name="controls" />
+        <input id="slide4" type="radio" name="controls" />
+
+        <!-- navigation dots -->
+        <label for="slide1" class="nav-dot"></label>
+        <label for="slide2" class="nav-dot"></label>
+        <label for="slide3" class="nav-dot"></label>
+        <label for="slide4" class="nav-dot"></label>
+
+        <!-- arrows -->
+        <label for="slide1" class="left-arrow"><img src="assets/left-arrow.png" alt="left-arrow"></label>
+        <label for="slide2" class="left-arrow"><img src="assets/left-arrow.png" alt="left-arrow"></label>
+        <label for="slide3" class="left-arrow"><img src="assets/left-arrow.png" alt="left-arrow"></label>
+        <label for="slide4" class="left-arrow"><img src="assets/left-arrow.png" alt="left-arrow"></label>
+
+        <label for="slide1" class="right-arrow"><img src="assets/right-arrow.png" alt="left-arrow"></label>
+        <label for="slide2" class="right-arrow"><img src="assets/right-arrow.png" alt="left-arrow"></label>
+        <label for="slide3" class="right-arrow"><img src="assets/right-arrow.png" alt="left-arrow"></label>
+        <label for="slide4" class="right-arrow"><img src="assets/right-arrow.png" alt="left-arrow"></label>
+        <div class="carousel">
+          <ul>
+            <li>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="651" height="209" viewBox="0 0 651 209" fill="none">
+                  <path
+                    d="M0 30C0 13.4315 13.4315 0 30 0H621C637.569 0 651 13.4315 651 30V179C651 195.569 637.569 209 621 209H30C13.4315 209 0 195.569 0 179V30Z"
+                    fill="url(#paint0_linear_1_341)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_1_341" x1="320.549" y1="-6.50415" x2="320.549" y2="202.496"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.286458" stop-opacity="0" />
+                      <stop offset="1" stop-color="#D46363" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <img src="assets/slider-image.png" alt="content-image" />
+              </div>
+              <div>
+                <h5>16 березня</h5>
+                <h6>ВІДКРИТТЯ КОВОРКІНГУ В ЗЕФІРІ НА БАЗІ НАВЧАЛЬНОГО ЦЕНТРУ HART_CODE</h6>
+              </div>
+            </li>
+            <li>
+              <img id="blind" src="assets/slider-image-plug.png" alt="content-image" />
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="651" height="209" viewBox="0 0 651 209" fill="none">
+                  <path
+                    d="M0 30C0 13.4315 13.4315 0 30 0H621C637.569 0 651 13.4315 651 30V179C651 195.569 637.569 209 621 209H30C13.4315 209 0 195.569 0 179V30Z"
+                    fill="url(#paint0_linear_1_341)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_1_341" x1="320.549" y1="-6.50415" x2="320.549" y2="202.496"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.286458" stop-opacity="0" />
+                      <stop offset="1" stop-color="#D46363" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <img src="assets/slider-image.png" alt="content-image" />
+              </div>
+              <div>
+                <h5>16 березня</h5>
+                <h6>ВІДКРИТТЯ КОВОРКІНГУ В ЗЕФІРІ НА БАЗІ НАВЧАЛЬНОГО ЦЕНТРУ HART_CODE</h6>
+              </div>
+            </li>
+            <li>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="651" height="209" viewBox="0 0 651 209" fill="none">
+                  <path
+                    d="M0 30C0 13.4315 13.4315 0 30 0H621C637.569 0 651 13.4315 651 30V179C651 195.569 637.569 209 621 209H30C13.4315 209 0 195.569 0 179V30Z"
+                    fill="url(#paint0_linear_1_341)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_1_341" x1="320.549" y1="-6.50415" x2="320.549" y2="202.496"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.286458" stop-opacity="0" />
+                      <stop offset="1" stop-color="#D46363" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <img src="assets/slider-image.png" alt="content-image" />
+              </div>
+              <div>
+                <h5>16 березня</h5>
+                <h6>ВІДКРИТТЯ КОВОРКІНГУ В ЗЕФІРІ НА БАЗІ НАВЧАЛЬНОГО ЦЕНТРУ HART_CODE</h6>
+              </div>
+            </li>
+            <li>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="651" height="209" viewBox="0 0 651 209" fill="none">
+                  <path
+                    d="M0 30C0 13.4315 13.4315 0 30 0H621C637.569 0 651 13.4315 651 30V179C651 195.569 637.569 209 621 209H30C13.4315 209 0 195.569 0 179V30Z"
+                    fill="url(#paint0_linear_1_341)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_1_341" x1="320.549" y1="-6.50415" x2="320.549" y2="202.496"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0.286458" stop-opacity="0" />
+                      <stop offset="1" stop-color="#D46363" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <img src="assets/slider-image.png" alt="content-image" />
+              </div>
+              <div>
+                <h5>16 березня</h5>
+                <h6>ВІДКРИТТЯ КОВОРКІНГУ В ЗЕФІРІ НА БАЗІ НАВЧАЛЬНОГО ЦЕНТРУ HART_CODE</h6>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="line orangeBG"></div>
+      <div class="projects__title">
+        <div>
+          <h1>АКТУАЛЬНІ ПРОЕКТИ</h1>
+          <p>
+            Громадська організація “ІТ- місто” авьтвно залучається до життя громади Дрогобицької ОТГ, зокрема
+            реалізували
+            та реплізовуємо наступні проекти:
+          </p>
+        </div>
+      </div>
+      <div class="projects__cards">
+        <!-- card -->
+        <div class="card">
+          <!-- back -->
+          <div class="card__side card__side--back">
+            <img src="assets/card-back-logo.png" alt="teacher">
+            <h5>КОВОРКІНГ</h5>
+            <p>На базі НВК “Зефір” вікрито безкоштовний коворкінг для людей, котрі були вимушені покинути свої доміки
+              у звязку з війною. Більше деталей за посилання</p>
+          </div>
+          <!-- front -->
+          <div class="card__side card__side--front">
+            <img src="assets/teacher.png" alt="teacher">
+            <h5>ВЧИТЕЛЬ 2.0</h5>
+            <p>Навчання вичителів місцевих сучасних digital напрямків...</p>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div class="card">
+          <!-- back -->
+          <div class="card__side card__side--back">
+            <img src="assets/card-back-logo.png" alt="teacher">
+            <h5>КОВОРКІНГ</h5>
+            <p>На базі НВК “Зефір” вікрито безкоштовний коворкінг для людей, котрі були вимушені покинути свої доміки
+              у звязку з війною. Більше деталей за посилання</p>
+          </div>
+          <!-- front -->
+          <div class="card__side card__side--front">
+            <img src="assets/selection.png" alt="teacher">
+            <h5>СЕЛЕКТИВНІ КУРСИ</h5>
+            <p>Запровадження гуртків в школах та навчання там сучісних креативних нап..</p>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div class="card">
+          <!-- back -->
+          <div class="card__side card__side--back">
+            <img src="assets/card-back-logo.png" alt="teacher">
+            <h5>КОВОРКІНГ</h5>
+            <p>На базі НВК “Зефір” вікрито безкоштовний коворкінг для людей, котрі були вимушені покинути свої доміки
+              у звязку з війною. Більше деталей за посилання</p>
+          </div>
+          <!-- front -->
+          <div class="card__side card__side--front">
+            <img src="assets/teacher.png" alt="teacher">
+            <h5>ВЧИТЕЛЬ 2.0</h5>
+            <p>Навчання вичителів місцевих сучасних digital напрямків...</p>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div class="card">
+          <!-- back -->
+          <div class="card__side card__side--back">
+            <img src="assets/card-back-logo.png" alt="teacher">
+            <h5>КОВОРКІНГ</h5>
+            <p>На базі НВК “Зефір” вікрито безкоштовний коворкінг для людей, котрі були вимушені покинути свої доміки
+              у звязку з війною. Більше деталей за посилання</p>
+          </div>
+          <!-- front -->
+          <div class="card__side card__side--front">
+            <img src="assets/contest.png" alt="teacher">
+            <h5>КОНКУРС ПРОЕКТІВ</h5>
+            <p>Представники різних шкіл матимуть можливість скласти проект та....</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="line redBG"></div>
+    <section class="team">
+      <h1>КОМАНДА</h1>
+      <div class="team__slider">
+        <!-- abstract radio buttons for slides -->
+        <input id="team__slider_slide1" type="radio" name="controls" checked="checked" />
+        <input id="team__slider_slide2" type="radio" name="controls" />
+        <input id="team__slider_slide3" type="radio" name="controls" />
+
+        <!-- navigation dots -->
+        <label for="team__slider_slide1" class="team__slider_nav-dot"></label>
+        <label for="team__slider_slide2" class="team__slider_nav-dot"></label>
+        <label for="team__slider_slide3" class="team__slider_nav-dot"></label>
+
+        <!-- arrows -->
+        <label for="team__slider_slide1" class="team__slider_left-arrow"><img src="assets/team-arrow.png"
+            alt="left-arrow"></label>
+        <label for="team__slider_slide2" class="team__slider_left-arrow"><img src="assets/team-arrow.png"
+            alt="left-arrow"></label>
+        <label for="team__slider_slide3" class="team__slider_left-arrow"><img src="assets/team-arrow.png"
+            alt="left-arrow"></label>
+
+        <label for="team__slider_slide1" class="team__slider_right-arrow"><img src="assets/team-arrow.png"
+            alt="left-arrow"></label>
+        <label for="team__slider_slide2" class="team__slider_right-arrow"><img src="assets/team-arrow.png"
+            alt="left-arrow"></label>
+        <label for="team__slider_slide3" class="team__slider_right-arrow"><img src="assets/team-arrow.png"
+            alt="left-arrow"></label>
+
+        <div class="team__slider_carousel">
+          <ul>
+            <li>
+              <div class="team__card">
+                <!-- back -->
+                <div class="team__card_side team__card_side--back">
+                  <img src="assets/team-card-back-logo.png" alt="logo">
+                  <div>
+                    <h5>Лялюк Ігор</h5>
+                    <p>Член ГО “ІТ -місто”</p>
+                  </div>
+                  <p>Python, FrontEnd Dev в компанії “Простір”</p>
+                </div>
+                <!-- front -->
+                <div class="team__card_side team__card_side--front">
+                  <img src="assets/person-photo-1.png" alt="content-image" />
+                </div>
+              </div>
+
+              <div class="team__card">
+                <!-- back -->
+                <div class="team__card_side team__card_side--back">
+                  <img src="assets/team-card-back-logo.png" alt="logo">
+                  <div>
+                    <h5>Лялюк Ігор</h5>
+                    <p>Член ГО “ІТ -місто”</p>
+                  </div>
+                  <p>Python, FrontEnd Dev в компанії “Простір”</p>
+                </div>
+                <!-- front -->
+                <div class="team__card_side team__card_side--front">
+                  <img src="assets/person-photo-2.png" alt="content-image" />
+                </div>
+              </div>
+
+              <div class="team__card">
+                <!-- back -->
+                <div class="team__card_side team__card_side--back">
+                  <img src="assets/team-card-back-logo.png" alt="logo">
+                  <div>
+                    <h5>Лялюк Ігор</h5>
+                    <p>Член ГО “ІТ -місто”</p>
+                  </div>
+                  <p>Python, FrontEnd Dev в компанії “Простір”</p>
+                </div>
+                <!-- front -->
+                <div class="team__card_side team__card_side--front">
+                  <img src="assets/person-photo-3.png" alt="content-image" />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="team__card">
+                <!-- back -->
+                <div class="team__card_side team__card_side--back">
+                  <img src="assets/team-card-back-logo.png" alt="logo">
+                  <div>
+                    <h5>Лялюк Ігор</h5>
+                    <p>Член ГО “ІТ -місто”</p>
+                  </div>
+                  <p>Python, FrontEnd Dev в компанії “Простір”</p>
+                </div>
+                <!-- front -->
+                <div class="team__card_side team__card_side--front">
+                  <img src="assets/person-photo-1.png" alt="content-image" />
+                </div>
+              </div>
+
+              <div class="team__card">
+                <!-- back -->
+                <div class="team__card_side team__card_side--back">
+                  <img src="assets/team-card-back-logo.png" alt="logo">
+                  <div>
+                    <h5>Лялюк Ігор</h5>
+                    <p>Член ГО “ІТ -місто”</p>
+                  </div>
+                  <p>Python, FrontEnd Dev в компанії “Простір”</p>
+                </div>
+                <!-- front -->
+                <div class="team__card_side team__card_side--front">
+                  <img src="assets/person-photo-2.png" alt="content-image" />
+                </div>
+              </div>
+
+              <div class="team__card">
+                <!-- back -->
+                <div class="team__card_side team__card_side--back">
+                  <img src="assets/team-card-back-logo.png" alt="logo">
+                  <div>
+                    <h5>Лялюк Ігор</h5>
+                    <p>Член ГО “ІТ -місто”</p>
+                  </div>
+                  <p>Python, FrontEnd Dev в компанії “Простір”</p>
+                </div>
+                <!-- front -->
+                <div class="team__card_side team__card_side--front">
+                  <img src="assets/person-photo-3.png" alt="content-image" />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="team__card">
+                <!-- back -->
+                <div class="team__card_side team__card_side--back">
+                  <img src="assets/team-card-back-logo.png" alt="logo">
+                  <div>
+                    <h5>Лялюк Ігор</h5>
+                    <p>Член ГО “ІТ -місто”</p>
+                  </div>
+                  <p>Python, FrontEnd Dev в компанії “Простір”</p>
+                </div>
+                <!-- front -->
+                <div class="team__card_side team__card_side--front">
+                  <img src="assets/person-photo-1.png" alt="content-image" />
+                </div>
+              </div>
+
+              <div class="team__card">
+                <!-- back -->
+                <div class="team__card_side team__card_side--back">
+                  <img src="assets/team-card-back-logo.png" alt="logo">
+                  <div>
+                    <h5>Лялюк Ігор</h5>
+                    <p>Член ГО “ІТ -місто”</p>
+                  </div>
+                  <p>Python, FrontEnd Dev в компанії “Простір”</p>
+                </div>
+                <!-- front -->
+                <div class="team__card_side team__card_side--front">
+                  <img src="assets/person-photo-2.png" alt="content-image" />
+                </div>
+              </div>
+
+              <div class="team__card">
+                <!-- back -->
+                <div class="team__card_side team__card_side--back">
+                  <img src="assets/team-card-back-logo.png" alt="logo">
+                  <div>
+                    <h5>Лялюк Ігор</h5>
+                    <p>Член ГО “ІТ -місто”</p>
+                  </div>
+                  <p>Python, FrontEnd Dev в компанії “Простір”</p>
+                </div>
+                <!-- front -->
+                <div class="team__card_side team__card_side--front">
+                  <img src="assets/person-photo-3.png" alt="content-image" />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="team__enjoy-button">
+        <div>
+          <a href="#">ПРИЄДНАТИСЬ ДО КОМАНДИ</a>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <p>ПАРТНЕРИ</p>
+      <div class="partners__links">
+
+        <a href="#">
+          <div class="partners__links_card">
+            <!-- back -->
+            <div class="partners__links_card_side partners__links_card_side--back">
+              <img src="assets/partners-logo-active.png" alt="partners-logo-active">
+            </div>
+            <!-- front -->
+            <div class="partners__links_card_side partners__links_card_side--front">
+              <img src="assets/partners-logo_inactive.png" alt="content-image" />
+            </div>
+          </div>
+        </a>
+        
+        <a href="#">
+          <div class="partners__links_card">
+            <!-- back -->
+            <div class="partners__links_card_side partners__links_card_side--back">
+              <img src="assets/partners-logo-active.png" alt="partners-logo-active">
+            </div>
+            <!-- front -->
+            <div class="partners__links_card_side partners__links_card_side--front">
+              <img src="assets/partners-logo_inactive.png" alt="content-image" />
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="partners__links_card">
+            <!-- back -->
+            <div class="partners__links_card_side partners__links_card_side--back">
+              <img src="assets/partners-logo-active.png" alt="partners-logo-active">
+            </div>
+            <!-- front -->
+            <div class="partners__links_card_side partners__links_card_side--front">
+              <img src="assets/partners-logo_inactive.png" alt="content-image" />
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="partners__links_card">
+            <!-- back -->
+            <div class="partners__links_card_side partners__links_card_side--back">
+              <img src="assets/partners-logo-active.png" alt="partners-logo-active">
+            </div>
+            <!-- front -->
+            <div class="partners__links_card_side partners__links_card_side--front">
+              <img src="assets/partners-logo_inactive.png" alt="content-image" />
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="partners__links_card">
+            <!-- back -->
+            <div class="partners__links_card_side partners__links_card_side--back">
+              <img src="assets/partners-logo-active.png" alt="partners-logo-active">
+            </div>
+            <!-- front -->
+            <div class="partners__links_card_side partners__links_card_side--front">
+              <img src="assets/partners-logo_inactive.png" alt="content-image" />
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="partners__links_card">
+            <!-- back -->
+            <div class="partners__links_card_side partners__links_card_side--back">
+              <img src="assets/partners-logo-active.png" alt="partners-logo-active">
+            </div>
+            <!-- front -->
+            <div class="partners__links_card_side partners__links_card_side--front">
+              <img src="assets/partners-logo_inactive.png" alt="content-image" />
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer__base">
+      <a href="/">
+        <img src="assets/footer-logo.png" alt="footer-logo">
+        <p>Громадська організація ІТ - місто</p>
+      </a>
+      <nav class="footer__nav_1">
+        <ul>
+          <li>
+            <a href="#">Новини</a>
+          </li>
+          <li>
+            <a href="#">Проекти</a>
+          </li>
+          <li>
+            <a href="#">Команда</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="footer__nav_2">
+        <ul>
+          <li>
+            <a href="#">Про нас</a>
+          </li>
+          <li>
+            <a href="#">Коворкінг</a>
+          </li>
+        </ul>
+      </nav>
+      <ul>
+        <li>
+          <img src="assets/old-typical-phone.png" alt="old-typical-phone">
+          <p>+380 XX XXX XX XX</p>
+        </li>
+        <li>
+          <img src="assets/email-icon.png" alt="email-icon">
+          <p>temp@temp.com</p>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__links">
+      <div>
+        <a href="telegram.com">
+          <img src="assets/telegtam-icon.png" alt="telegtam-icon">
+        </a>
+        <a href="facebook.com">
+          <img src="assets/facebook-icon.png" alt="facebook-icon">
+        </a>
+        <a href="instagram.com">
+          <img src="assets/instagram-icon.png" alt="instagram-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
